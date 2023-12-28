@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link rel="stylesheet" href="./style.css" />
+<script type="module" src="./script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <audio style="width: 100%;" id="actual__song">
+    <source src="Mayabee(Mr-Jatt1.com).mp3" type="audio/mpeg">
+  </audio>
+  <div class="container">
+    <div class="container__box">
+      <div class="track__number">Playing x of y</div>
+      <div class="track__image"><img src="./mayabee.jpeg" alt="" /></div>
+      <div class="track__name">Track Name</div>
+      <div class="track_artistName">Track artist name</div>
+      <div class="play__slider">
+        <div class="current__time">0:00</div>
+        <input type="range" min="0" max="246" value="0" class="play"/>
+        <div class="total__duration">0:00</div>
+      </div>
+      <div class="volume__slider">
+        <div class="volume__down"><i class="fa-solid fa-volume-low"></i></div>
+        <input type="range" min="0" max="100" value="100" class="volume">
+        <div class="volume__up"><i class="fa-solid fa-volume-high"></i></div>
+      </div>
+      <div class="buttons">
+        <!-- <div class="shuffle__button"><i class="fa-solid fa-shuffle"></i></div> -->
+        <div class="back__button"><i class="fa-solid fa-backward fa-2x"></i></div>
+        <div class="playpausebtn play__btn">
+          <div id="action__button"><i class="fa-solid fa-play fa-3x"></i></div>
+        </div>
+        
+        <div class="forward__button"><i class="fa-solid fa-forward fa-2x"></i></div>
+        <!-- <div class="loop__button"><i class="fa-solid fa-person-walking-arrow-loop-left"></i></div> -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
