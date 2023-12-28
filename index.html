@@ -10,17 +10,19 @@
 
 <body>
   <audio style="width: 100%;" id="actual__song">
-    <source src="Mayabee(Mr-Jatt1.com).mp3" type="audio/mpeg">
+    <source src="Mayabee(Mr-Jatt1.com).mp3" id="song__source"  type="audio/mpeg">
   </audio>
   <div class="container">
     <div class="container__box">
       <div class="track__number">Playing x of y</div>
-      <div class="track__image"><img src="./mayabee.jpeg" alt="" /></div>
-      <div class="track__name">Track Name</div>
-      <div class="track_artistName">Track artist name</div>
+      <div class="song_details">
+        <!-- <div class="track__image"><img src="./mayabee.jpeg" alt="" /></div>
+        <div class="track__name">Track Name</div>
+        <div class="track_artistName">Track artist name</div> -->
+      </div>
       <div class="play__slider">
         <div class="current__time">0:00</div>
-        <input type="range" min="0" max="246" value="0" class="play"/>
+        <input type="range" min=0 max=246 value="0" class="play"/>
         <div class="total__duration">0:00</div>
       </div>
       <div class="volume__slider">
@@ -32,7 +34,7 @@
         <!-- <div class="shuffle__button"><i class="fa-solid fa-shuffle"></i></div> -->
         <div class="back__button"><i class="fa-solid fa-backward fa-2x"></i></div>
         <div class="playpausebtn play__btn">
-          <div id="action__button"><i class="fa-solid fa-play fa-3x"></i></div>
+          <div id="action__button"><i class="fa-solid fa-pause fa-3x"></i></div>
         </div>
         
         <div class="forward__button"><i class="fa-solid fa-forward fa-2x"></i></div>
